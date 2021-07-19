@@ -1,0 +1,108 @@
+//@import "../bootstrap/scss/bootstrap.scss";
+@import "../bootstrap/scss/bootstrap-utilities.scss";                                               //importing basic utilities and js connections
+
+@import "../bootstrap/scss/reboot","../bootstrap/scss/grid", "../bootstrap/scss/containers";        //importing grid-view and containers 
+
+@import "../bootstrap/scss/navbar", "../bootstrap/scss/dropdown", "../bootstrap/scss/nav";          //importing navbar and navbar functions
+@import "../bootstrap/scss/buttons", "../bootstrap/scss/transitions", "../bootstrap/scss/button-group";   //importing buttons and their transitions 
+@import "../bootstrap/scss/carousel", "../bootstrap/scss/offcanvas";                                //importing carousel and offcanvas
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');                         //Making font family-1
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+//@import "/scss/myvariables"                                                //importing user-defined variables
+
+$accent1: #17181B;
+$background_color: #17181B;
+$text_color: #FFFFFF;
+$bodyfont: 'Bitter', serif; 
+$headfont: 'Montserrat', sans-serif;
+$loremfont: 'Roboto', sans-serif;
+
+@mixin main_content {                                                       //mixin for main content 
+  background-color: $accent1; 
+  color: $text_color;
+  font-family: $bodyfont;
+  border-radius: 20px;
+}
+
+
+
+
+.backdrop{ 
+  background-color: $background_color;
+}
+.backdrop1{
+   background-color: solid yellow;
+}
+
+.contentx{
+  @include main_content;
+  margin-left: 5%;
+}
+
+.name_parent{
+  font-family: $headfont;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.name{
+  font-family: $headfont;
+  font-weight: 700;
+  font-size: 80px;
+}
+
+.name_child{
+  font-family: $headfont;
+  font-weight: 700;
+  font-size: 50px;
+
+}
+
+.loremz{
+
+  font-family: $loremfont;
+  font-weight: 400;
+  font-size: 20px;
+}
+.hello{
+  margin-top: 12%;
+  margin-bottom: 20%;
+}
+
+.sub_heads{
+  
+  font-family: $headfont;
+  font-weight: 700;
+  font-size: 50px;
+
+} 
+ 
+.about{
+  margin-bottom: 2%;
+}
+.slidshow{
+  @include main_content;
+  margin-right: 30px;
+  margin-bottom: 20%;
+}
+
+.contact{
+  margin-top: 20%
+}
+
+.nav_buttons{
+  color: $text_color;
+  font-family: $loremfont;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.togglevibes{
+  background-color: #FFFFFF;
+  padding: 5px solid;
+}
